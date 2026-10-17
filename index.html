@@ -1,279 +1,118 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pio Gino - Developer & Creator</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>piogino.ch</title>
+  <meta name="description" content="Pio Gino Steiner's hobby projects: art history map, D&amp;D campaign map, file converters, meetup planner and more.">
+  <link rel="canonical" href="https://piogino.ch/">
+  <link rel="icon" href="/assets/icon.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#f3f0e8" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#151412" media="(prefers-color-scheme: dark)">
+  <link rel="stylesheet" href="/assets/site.css">
+  <script>try{var t=localStorage.getItem('preferred-theme');if(t==='light'||t==='dark')document.documentElement.dataset.theme=t}catch(e){}</script>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <a href="#home">piogino.ch</a>
-            </div>
-            <div class="nav-menu" id="nav-menu">
-                <a href="#home" class="nav-link">Home</a>
-                <a href="#projects" class="nav-link">Projects</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#contact" class="nav-link">Contact</a>
-            </div>
-            <div class="nav-toggle" id="nav-toggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </div>
-    </nav>
+  <header class="site-head">
+    <div class="wrap">
+      <a class="mark" href="/"><svg viewBox="0 0 18 18" aria-hidden="true"><rect x="1" y="1" width="7" height="7" fill="currentColor"/><rect x="10.75" y="1.75" width="5.5" height="5.5" fill="none" stroke="currentColor" stroke-width="1.5"/><rect x="1.75" y="10.75" width="5.5" height="5.5" fill="none" stroke="currentColor" stroke-width="1.5"/><rect x="10" y="10" width="7" height="7" fill="var(--accent)"/></svg>piogino<span>.ch</span></a>
+      <nav class="head-nav" aria-label="Sections">
+        <a href="#projects">projects</a>
+        <a href="#about">about</a>
+      </nav>
+      <button class="theme-btn" type="button">system</button>
+    </div>
+  </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <h1 class="hero-title">
-                    Welcome to <span class="highlight">piogino.ch</span>
-                </h1>
-                <p class="hero-subtitle">
-                    Developer & Creator of Digital Tools and Experiences
-                </p>
-                <p class="hero-description">
-                    Building useful applications, interactive tools, and creative solutions for the web.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn-primary">View Projects</a>
-                    <a href="#about" class="btn-secondary">Learn More</a>
-                </div>
-            </div>
-            <div class="hero-visual">
-                <div class="floating-card">
-                    <i class="fas fa-code"></i>
-                </div>
-            </div>
-        </div>
+  <main class="wrap">
+    <div class="intro">
+      <h1>Small tools and maps,<br>built for my own use<span class="accent">.</span></h1>
+      <p>Hobby projects by Pio Gino Steiner, Zürich. Free to use, open source, no ads and no tracking.</p>
+    </div>
+
+    <ol class="index" id="projects">
+      <li class="index-group">Maps &amp; reference</li>
+      <li><a href="https://arthistory.piogino.ch">
+        <span class="n">01</span>
+        <span class="t">Art History</span>
+        <span class="d">Artists, artworks, movements and museums on a map, a timeline and an influence graph.</span>
+        <span class="w">arthistory</span>
+      </a></li>
+      <li><a href="https://adenai.piogino.ch">
+        <span class="n">02</span>
+        <span class="t">Adenai Map</span>
+        <span class="d">Interactive map of the continent Adenai from our D&amp;D campaign, with places, characters and the party's journeys.</span>
+        <span class="w">adenai</span>
+      </a></li>
+
+      <li class="index-group">Tools</li>
+      <li><a href="https://converter.piogino.ch">
+        <span class="n">03</span>
+        <span class="t">converter</span>
+        <span class="d">PNG to JPEG, Telegram stickers and emoji, GIF to WebM, and printing battle maps at true scale.</span>
+        <span class="w">converter</span>
+      </a></li>
+      <li><a href="https://meetup.piogino.ch">
+        <span class="n">04</span>
+        <span class="t">Meetup</span>
+        <span class="d">Find a date that works for everyone, with a personal link for each participant.</span>
+        <span class="w">meetup</span>
+      </a></li>
+      <li><a href="https://calorie-tracker.piogino.ch">
+        <span class="n">05</span>
+        <span class="t">Calorie Tracker</span>
+        <span class="d">Log meals and follow daily calories against a goal. For invited users.</span>
+        <span class="w">calorie-tracker</span>
+      </a></li>
+      <li><a href="https://obs-media-control.piogino.ch">
+        <span class="n">06</span>
+        <span class="t">OBS Media Controller</span>
+        <span class="d">Control the media shown in OBS Studio from a phone or tablet.</span>
+        <span class="w">obs-media-control</span>
+      </a></li>
+
+      <li class="index-group">Games</li>
+      <li><a href="https://quiz.piogino.ch">
+        <span class="n">07</span>
+        <span class="t">Quiz</span>
+        <span class="d">Live quizzes for a group: the host runs the questions, players answer on their phones.</span>
+        <span class="w">quiz</span>
+      </a></li>
+      <li><a href="https://piosteiner.github.io/Light-Trains-bot-command-generator/">
+        <span class="n">08</span>
+        <span class="t">Hunt Train Builder</span>
+        <span class="d">Final Fantasy XIV: builds the relay commands for a hunt train announcement bot on Discord.</span>
+        <span class="w">ffxiv</span>
+      </a></li>
+    </ol>
+
+    <section class="about" id="about">
+      <div>
+        <h2>About</h2>
+        <p>I'm Pio Gino, a hobby developer. I build practical tools for problems I run into myself: sometimes because
+          nothing fitting existed, sometimes because I wanted to understand how it works.</p>
+        <p>Most of it is written together with AI, Claude in particular, which made programming far more accessible
+          to me. The code is on <a href="https://github.com/piosteiner">GitHub</a>.</p>
+      </div>
+      <div>
+        <h2>Contact</h2>
+        <ul class="facts">
+          <li><span>email</span><a href="mailto:info@piogino.ch">info@piogino.ch</a></li>
+          <li><span>code</span><a href="https://github.com/piosteiner">github.com/piosteiner</a></li>
+          <li><span>based in</span><span>Zürich, Switzerland</span></li>
+        </ul>
+      </div>
     </section>
+  </main>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <p class="section-subtitle">Explore the tools and applications I've created</p>
-            
-            <div class="projects-grid">
-                <!-- Image Converter -->
-                <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-image"></i>
-                    </div>
-                    <h3>Image Converter</h3>
-                    <p>Drag-and-drop PNG to JPEG converter tool with instant results and high-quality output.</p>
-                    <div class="project-tags">
-                        <span class="tag">JavaScript</span>
-                        <span class="tag">Canvas API</span>
-                        <span class="tag">File Upload</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://converter.piogino.ch" target="_blank" class="project-link">
-                            <i class="fas fa-external-link-alt"></i> Visit Tool
-                        </a>
-                    </div>
-                </div>
+  <footer class="site-foot">
+    <div class="wrap">
+      <span>© 2026 Pio Gino Steiner</span>
+      <span>No cookies · no tracking</span>
+      <a href="/privacy.html">Privacy</a>
+    </div>
+  </footer>
 
-                <!-- Meetup Platform -->
-                <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <h3>Meetup Platform</h3>
-                    <p>Interactive meetup management system with personalized participant URLs and dynamic content.</p>
-                    <div class="project-tags">
-                        <span class="tag">Git Integration</span>
-                        <span class="tag">Dynamic URLs</span>
-                        <span class="tag">Event Management</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://meetup.piogino.ch" target="_blank" class="project-link">
-                            <i class="fas fa-external-link-alt"></i> View Platform
-                        </a>
-                    </div>
-                </div>
-
-                <!-- D&D Campaign Map -->
-                <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-map"></i>
-                    </div>
-                    <h3>Adenai Campaign Map</h3>
-                    <p>Interactive D&D campaign map with journey system, CMS integration, and real-time updates using Leaflet.js.</p>
-                    <div class="project-tags">
-                        <span class="tag">Leaflet.js</span>
-                        <span class="tag">Node.js CMS</span>
-                        <span class="tag">API Integration</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://adenai.piogino.ch" target="_blank" class="project-link">
-                            <i class="fas fa-external-link-alt"></i> Explore Map
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <h2>About Me</h2>
-                    <p>
-                        I, Pio Gino, am a hobby developer who enjoys creating practical tools and interactive experiences for my own use. 
-                        With the rise of AI I realized how much more accessible programming has become. I rely especially on ClaudeAI to assist me in my projects.
-                    </p>
-                    <p>
-                       To fully leverage our digital environment, I started with small projects that solved problems I encountered in my daily life - for some of these problems solutions already existed, for some I had to create my own.
-                       Wether it was in recreating and improving or creating something completely new, I learned to identify needs and translate them into functional applications.
-                       Over time, I expanded my skills and built more complex applications that integrate various technologies and APIs.
-                       I believe in the power of AI in assisting in self-taught learning.
-                       Further I believe in open source programming and community collaboration, which is why I share my projects and code with others.
-                    </p>
-                    <p>
-                        From image processing tools to interactive mapping systems, I love exploring new technologies 
-                        and creating solutions that make digital life easier and more engaging. You can explore my 
-                        open source projects and code repositories on <a href="https://github.com/piosteiner" target="_blank" class="inline-link">GitHub</a>.
-                    </p>
-                    
-                    <div class="skills">
-                        <h3>Technologies I Work With</h3>
-                        <div class="skills-grid">
-                            <div class="skill-item">
-                                <i class="fab fa-html5"></i>
-                                <span>HTML5</span>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fab fa-css3-alt"></i>
-                                <span>CSS3</span>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fab fa-js-square"></i>
-                                <span>JavaScript</span>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fab fa-node-js"></i>
-                                <span>Node.js</span>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fab fa-git-alt"></i>
-                                <span>Git</span>
-                            </div>
-                            <div class="skill-item">
-                                <i class="fas fa-database"></i>
-                                <span>APIs</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-visual">
-                    <div class="code-preview">
-                        <div class="code-header">
-                            <div class="code-dots">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-                            <div class="code-title">welcome.js</div>
-                        </div>
-                        <div class="code-content">
-                            <div class="code-line">
-                                <span class="code-keyword">const</span> 
-                                <span class="code-variable">developer</span> = {
-                            </div>
-                            <div class="code-line">
-                                &nbsp;&nbsp;<span class="code-property">name</span>: <span class="code-string">'piogino'</span>,
-                            </div>
-                            <div class="code-line">
-                                &nbsp;&nbsp;<span class="code-property">passion</span>: <span class="code-string">'Creating'</span>,
-                            </div>
-                            <div class="code-line">
-                                &nbsp;&nbsp;<span class="code-property">focus</span>: <span class="code-string">'Innovation'</span>
-                            </div>
-                            <div class="code-line">
-                                };
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <p class="section-subtitle">Interested in collaborating or have a project in mind?</p>
-            
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-globe"></i>
-                        <div>
-                            <h3>Website</h3>
-                            <p>piogino.ch</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h3>Location</h3>
-                            <p>Zürich, Switzerland</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="project-showcase">
-                    <h3>Quick Access to Projects</h3>
-                    <div class="quick-links">
-                        <a href="https://converter.piogino.ch" target="_blank" class="quick-link">
-                            <i class="fas fa-image"></i>
-                            Image Processing Suite
-                        </a>
-                        <a href="https://meetup.piogino.ch" target="_blank" class="quick-link">
-                            <i class="fas fa-users"></i>
-                            Meetup Platform
-                        </a>
-                        <a href="https://adenai.piogino.ch" target="_blank" class="quick-link">
-                            <i class="fas fa-map"></i>
-                            Campaign Map
-                        </a>
-                        <a href="https://adenai-admin.piogino.ch" target="_blank" class="quick-link">
-                            <i class="fas fa-cogs"></i>
-                            Adenai CMS
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-text">
-                    <p>&copy; 2025 Pio Gino Steiner. Building the web, one project at a time.</p>
-                </div>
-                <div class="footer-links">
-                    <a href="#home">Home</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#about">About</a>
-                    <a href="#contact">Contact</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+  <script src="/assets/site.js"></script>
 </body>
 </html>
